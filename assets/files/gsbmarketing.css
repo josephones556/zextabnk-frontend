@@ -1,0 +1,23 @@
+.hero .text {
+    top: auto !important;
+    bottom: 50px !important;
+}
+.hero .text .container {
+    margin-left: 50px;
+    width: 50%;
+}
+
+@media all and (max-width:900px){
+.hero .text {
+    top: auto !important;
+}
+.hero .text .container {
+    margin-left: auto !important;
+    width: 90% !important;
+}
+}
+
+
+
+ 
+

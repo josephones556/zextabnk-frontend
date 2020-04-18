@@ -1,0 +1,50 @@
+/***********************************************/
+/* Print Styles*/
+/***********************************************/
+
+.noPrint {
+	display:none;
+}
+.print {
+	display:block;
+}
+.printOnly{
+	display:block;
+}
+/***********************************************/
+/* Hidden Items*/
+/***********************************************/
+
+#banner, #mainNav, #imageArea, .contentConainerTopBtm, #headerDiv, #contentSub, #contentExtra, #topOfPage, #footer, #footerNoFdic {
+	display:none;
+}
+
+/***********************************************/
+/* Visible Items*/
+/***********************************************/
+
+body, #page1, #contentContainer, #contentMain, #contentArea {
+	float: none;
+	display:block;
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	background: none;
+}
+#page1 {
+	border: none;
+}
+h1 {
+	float: none;
+	display:block;
+	margin: 0px 0px 0px -10px;
+	padding: 20px 0px 15px 0px;
+	width: 100%;
+	background: none;
+}
+#fdicEhlPrint {
+	display:block;
+	clear: both;
+	padding: 25px 0px 15px 0px;
+	text-align: center;
+}

@@ -1,0 +1,527 @@
+@charset "UTF-8";
+/* Simple fluid media
+   Note: Fluid media requires that you remove the media's height and width attributes from the HTML
+   http://www.alistapart.com/articles/fluid-images/ 
+*/
+
+*{
+	margin:0;
+	padding:0;}
+
+img, object, embed, video {
+	max-width: 100%;
+}
+/* IE 6 does not support max-width so default to width 100% */
+.ie6 img {
+	width:100%;
+}
+
+.noWrap{
+	white-space:nowrap;}
+
+a img{
+	border:none;}
+@font-face {
+	font-family: 'MarkWebPro-LightW01Regular';
+	src: url('http://mastercardevents.com/webfonts/MarkWebPro-LightW01Regular.eot');
+	src: url('http://mastercardevents.com/webfonts/MarkWebPro-LightW01Regular.eot?#iefix') format('embedded-opentype'), url('http://mastercardevents.com/webfonts/MarkWebPro-LightW01Regular.woff2') format('woff2'), url('http://mastercardevents.com/webfonts/MarkWebPro-LightW01Regular.woff') format('woff'), url('http://mastercardevents.com/webfonts/MarkWebPro-LightW01Regular.ttf') format('truetype'), url('http://mastercardevents.com/webfonts/MarkWebPro-LightW01Regular.svg#MarkWebPro-LightW01Regular') format('svg');
+	font-weight: bold;
+}
+ 
+@font-face {
+	font-family: 'MarkWebPro-BookW01Regular';
+	src: url('http://mastercardevents.com/webfonts/MarkWebPro-BookW01Regular.eot');
+	src: url('http://mastercardevents.com/webfonts/MarkWebPro-BookW01Regular.eot?#iefix') format('embedded-opentype'), url('http://mastercardevents.com/webfonts/MarkWebPro-BookW01Regular.woff2') format('woff2'), url('http://mastercardevents.com/webfonts/MarkWebPro-BookW01Regular.woff') format('woff'), url('http://mastercardevents.com/webfonts/MarkWebPro-BookW01Regular.ttf') format('truetype'), url('http://mastercardevents.com/webfonts/MarkWebPro-BookW01Regular.svg#MarkWebPro-BookW01Regular') format('svg');
+	font-weight: bold;
+}
+ 
+/*
+	Dreamweaver Fluid Grid Properties
+	----------------------------------
+	dw-num-cols-mobile:		5;
+	dw-num-cols-tablet:		8;
+	dw-num-cols-desktop:	12;
+	dw-gutter-percentage:	15;
+	
+	Inspiration from "Responsive Web Design" by Ethan Marcotte 
+	http://www.alistapart.com/articles/responsive-web-design
+	
+	and Golden Grid System by Joni Korpi
+	http://goldengridsystem.com/
+*/
+
+/* Mobile Layout: 480px and below. */
+
+.clear{
+	clear:both;}
+
+sup{
+	font-size: 65%;
+	line-height: normal;
+	vertical-align: text-top;
+}	
+
+
+	
+.gridContainer {
+	margin-left: auto;
+	margin-right: auto;
+	width: 98%;
+	padding-left: 0;
+	padding-right: 0;
+	
+	border-left: 1px solid #b2b2b2;
+    border-right: 1px solid #b2b2b2;
+	border-bottom: 1px solid #b2b2b2;
+	 
+}
+
+/***************/
+/*HEADER*/
+/**************/
+
+#Header {
+	width: 100%;
+	 
+}
+
+.headerLeft{
+	float:none;
+	width:100%;
+	 margin-left: auto;
+	margin-right: auto;
+	}
+.headerRight{
+	display:none;
+	} 
+
+h1{
+	margin-top:0;
+	margin-bottom:0;}
+	
+/***************/
+/*MAIN CONTENT*/
+/**************/
+
+
+
+#mainContent {
+	width: 100%;
+	font-family: Arial, Helvetica, sans-serif;
+	 margin-left: auto;
+	margin-right: auto;
+	margin-top:40px;
+	
+	
+}
+
+.sectionFirst{
+	margin-bottom:45px;
+	margin-left:35px;
+	margin-right:35px;
+	border-bottom: 1px solid #b2b2b2;
+	}
+
+.sectionFirstLeft{
+	width: 204px;
+	float: none;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 25px;
+	vertical-align: bottom;
+	}
+	
+.sectionFirstRight{
+	width: 98%%;
+	float: none;
+	margin-left: auto;
+	margin-right: auto;
+	text-align:center;
+}
+	
+.sectionFirst h2{
+	font-size: 25px;
+	line-height: 32px;
+	font-weight: normal;
+	color: #050000;
+	margin-bottom:5px;
+	margin-top:10px;
+}
+
+.sectionFirst p{
+	font-size: 16px;
+	line-height: 24px;
+	color: #050000;
+	margin-top: 14px;
+	margin-bottom: 14px;
+	}	
+
+.sectionFirst #btnLearnMore,
+.sectionFirst #btn1 {
+	background-color: #ff671b;
+	display: inline-block;
+	margin-top: 5px;
+	font-size: 13px;
+	line-height: 13px;
+	font-weight: normal;
+	 
+	color: #010000;
+	padding-top: 8px;
+	padding-right: 18px;
+	padding-bottom: 8px;
+	padding-left: 18px;
+	border: none;
+	letter-spacing: 0.0125em;
+	-webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+     border-radius: 5px;
+	 font-family:'MarkWebPro-BookW01Regular', Arial, Helvetica, sans-serif;
+}
+
+
+.sectionFirst #btnLearnMore:hover,
+.sectionFirst #btn1:hover{
+	background-color: #666666;
+	color:#fff;
+}
+
+
+
+.sectionFirst #btn2{
+	background-color: #fff;
+	border:none;
+	display: inline-block;
+	margin-top: 5px;
+	font-size: 13px;
+	line-height: 13px;
+	font-weight: normal; 
+	color: #010000;
+	padding-top: 6px;
+	padding-right: 15px;
+	padding-bottom: 5px;
+	padding-left: 15px;
+	margin-left:10px;
+	margin-top:15px;
+	font-family:'MarkWebPro-BookW01Regular', Arial, Helvetica, sans-serif;
+	letter-spacing: 0.0125em;
+}
+
+.sectionFirst #btn2:hover{
+	background-color: #fff;
+	color:#010000;
+	border:none;}
+
+ .sectionSecond{
+	margin-bottom:40px;
+	margin-left:3.15%;
+	margin-right:3.15%;
+	width:93.7%;}
+	
+	
+.colLeft{
+	width:99%;
+	float:none;
+	margin-left: auto;
+	margin-right: auto;}
+	
+.colMiddle{
+	width:99%;
+	float:none;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top:25px;}
+
+.colRight{
+	width:99%;
+	float:none;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top:25px;}	 
+
+.sectionSecondCol{
+	text-align:center;}
+
+.sectionSecondCol h2{
+	font-family:Arial, Helvetica, sans-serif;
+	color:#ff671b;
+	font-size:25px;
+	line-height:27px;
+	margin-top:16px;
+	font-weight:normal;}
+	
+.sectionSecondCol p{
+	margin-top:12px;
+	margin-bottom:12px;
+	font-family:Arial, Helvetica, sans-serif;
+	color:#010000;
+	font-size:16px;
+	line-height:24px;
+	}	
+.sectionSecondCol p a{
+	color:#ff671b;
+	text-decoration:underline;}
+.sectionSecondCol p a:hover{
+	color:#010000;
+}
+.colLeft .icon{
+	width:143px;
+	margin-left: auto;
+	margin-right: auto;}
+
+.colMiddle .icon{
+	width:101px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom:0;}
+
+
+.colRight .icon{
+	width:76px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom:0;}
+
+
+.sectionThird{
+	background: #f4f4f4;
+	padding-top: 40px;
+	padding-bottom: 35px;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+.sectionSecond .btn3Wrapper{
+	margin-left:auto;
+	margin-right:auto;
+	width:205px;
+	margin-top:25px;}
+	
+.sectionSecond #btn3{
+	background-color: #fff;
+	border:none;
+	display: inline-block;  
+	color: #010000;
+	padding-top: 9px;
+	padding-right: 27px;
+	padding-bottom: 11px;
+	padding-left: 27px; 
+	font-family:'MarkWebPro-BookW01Regular', Arial, Helvetica, sans-serif; 
+	background-color: #ff671b; 
+	font-size:21px;
+	line-height:19px;
+	font-weight: normal;
+	-webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+     border-radius: 5px;
+	letter-spacing: 0.0125em;}
+
+.sectionSecond #btn3:hover{
+	background-color: #666666;
+	color: #fff;
+}
+
+.sectionThirdImg{
+	width:124px;
+	margin-left: auto;
+	margin-right: auto;
+	float:none;
+	margin-bottom:20px;}
+
+.sectionThirdText{
+	width:92%;
+	margin-left: auto;
+	margin-right: auto;
+	float:none;
+	text-align:left;}
+
+.sectionThird h2{
+	color:#010000;
+	font-size:30px;
+	line-height:34px;
+	font-weight:normal;}
+	
+.sectionThird p{
+	margin-top:14px;
+	margin-bottom:14px;
+	color:#010000;
+	font-size:16px;
+	line-height:22px;
+	}	
+ .sectionThird .cta p a{
+	 color:#010000;
+	 text-decoration:none;
+}
+
+ 
+	
+/*********/
+/*LEGAL*/
+/*********/
+#mainFooter{
+	margin-left: auto;
+	margin-right: auto;
+	width: 93%;
+	padding-top:30px;
+	padding-left:3%;
+	padding-right:3%;
+	padding-bottom:30px;
+	}
+ 
+#mainFooter p{
+	font-size: 11px;
+	line-height: 13px; 
+	margin-top:7px;
+	margin-bottom:7px;
+	color:#010000;  
+} 		  
+
+#mainFooter p a{
+	 color:#010000;}
+		  
+/* Tablet Layout: 481px to 769px. Inherits styles from: Mobile Layout. */
+
+@media only screen and (min-width: 415px) {
+ .headerLeft{
+	float:left;
+	width:43.55%;
+	}
+.headerRight{
+	float:left;
+	width:56.45%;
+	display:block;
+	}
+
+
+
+/***************/
+/*MAIN CONTENT*/
+/**************/
+ .sectionFirst #btn2{
+	 
+	margin-top:0px;
+}	   
+	
+}
+ 
+ 
+
+@media only screen and (min-width: 660px) {
+/***************/
+/*MAIN CONTENT*/
+/**************/
+.sectionFirstLeft{
+	width: 204px;
+	 
+	}
+
+
+.colLeft{
+	width:31.35%;
+	float:left;
+	margin-right:3.36%;}
+	
+.colMiddle{
+	width:30.57%;
+	float:left;
+	margin-right:3.36%;
+	padding-top:0;}
+
+.colRight{
+	width:31.35%;
+	float:right;
+	padding-top:0;}
+
+.colLeft .icon{
+padding-top:15px;
+padding-bottom:14px;}
+	
+.colMiddle .icon{
+	padding-top:15px; 
+	padding-bottom:14px;}
+
+
+.colRight .icon{
+	 
+	padding-bottom:6px;}	
+
+.sectionThirdImg{
+	width:14.81%;
+	margin-left: 10.47%;
+	margin-right: 3.67%;
+	float:left;
+	margin-bottom:0;}
+
+.sectionThirdText{
+	width:62.56%;
+	margin-left: 0;
+	margin-right: 2.47%;
+	float:left; 
+	 }
+
+
+}
+
+@media only screen and (min-width:900px) {
+ 
+ .sectionFirstLeft{
+	width:21.86%;
+	float:left;
+	margin-left:12.4%;
+	margin-right:7.25%;
+	margin-top:0;}
+	
+.sectionFirstRight{
+	width: 53.23%;
+	float: right;
+	margin-right: 5.09%;
+	text-align:left;
+} 
+.oneLine{
+	white-space:nowrap;} 
+ 
+		 
+}
+
+/* Desktop Layout: 960px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+
+@media only screen and (min-width: 953px) {
+
+.gridContainer {
+	width: 953px;
+	margin: auto;
+	
+}
+#mainFooter {
+	width: 893px;
+	margin: auto;
+	padding-left:30px;
+	padding-right:30px;
+}
+
+/***************/
+/*HEADER*/
+/**************/
+
+#Header{
+	width: 953px;
+	margin-left: auto;
+	margin-right: auto;
+	position:relative;
+	}
+
+.headerLeft{
+	float:left;
+	width:415px;
+	}
+.headerRight{
+	float:left;
+	width:538px;
+	}
+
+/***************/
+/*MAIN CONTENT*/
+/**************/
+
+ 
+  
+           
+}

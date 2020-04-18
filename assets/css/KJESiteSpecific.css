@@ -1,0 +1,339 @@
+
+.KJEWait {
+    background-image: none !important;
+    border: .3125rem solid #f3f3f3 !important;
+    border-top: .3125rem solid #333 !important;
+    border-radius: 50% !important;
+    width: 1.5rem !important;
+    height: 1.5rem !important;
+    -webkit-animation: spin 1.5s linear infinite;
+    -o-animation: spin 1.5s linear infinite;
+    animation: spin 1.5s linear infinite;
+}
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+#KJESplash {
+    display: none;
+}
+
+body {
+    margin: 0;
+}
+
+.KJEWrapper {
+    padding: 0;
+    margin: 0;
+    background: none;
+}
+
+#KJEAllContent {
+    font: normal 1.1625rem "Open Sans",sans-serif;
+    background: none;
+    color: #414042;
+}
+
+.KJEFontHeading {
+    color:#414042;
+}
+
+.KJEFontTitle {
+    line-height: 1.375rem; /* Overwrite 22px in KJE.css */
+}
+
+.KJEError {
+    color:#c00;
+}
+
+.KJETitle {
+    font-size: 1.5rem;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: -.5rem -.5rem;
+    background-size: 5.3125rem 5.3125rem;
+}
+
+.KJEWidthConstraint {
+    background: none;
+    max-width: 56.25rem;
+    text-align: left;
+    margin: auto;
+    padding: .9375rem;
+}
+.KJEWidthConstraint>h1 {
+    display: none; /* Hide the title tag to avoid the duplicate heading issue */
+}
+
+.KJECalculatorTable {
+    background: none;
+    border: none;
+    box-shadow: none;
+}
+
+.KJEInputContainer:hover {
+    background-color: #fff;
+}
+.KJEDrop, .KJEDroppee {
+    background: none !important;
+}
+.KJEDropper:hover {
+    background-color: #fff;
+}
+
+.KJEGraphDropper:hover {
+    background-color: #f2f2f2;
+}
+
+.KJEInputContainer .help:hover {
+    color: #414042;
+}
+
+.KJEReportTitle {
+    font-size: 1.1625rem;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+.KJEReportTitleBlock {
+    text-align: center;
+    padding: 0.625rem;
+    margin-top: 0.3125rem;
+    margin: 0.625rem;
+    border-width: 0.0625rem;
+    border-style: solid;
+    border-color: black;
+}
+
+/*Buttons*/
+
+.KJECommandButton {
+    color:#414042;
+    background: #fff; /* Old browsers */
+    border-radius: 0;
+    padding: 0.3125rem;
+}
+.KJECommandButton:hover {
+    background: #fff; /* Old browsers */
+    cursor: pointer;
+}
+
+
+/*Override javascript*/
+
+#KJE-D-INPUTS, #KJE-E-INPUTS {
+    background: none !important;
+}
+
+.KJESubTitle  {
+    font-size: 1.125rem;
+    font-weight: bold;
+    line-height: normal;
+}
+
+.KJEToggleTitle {
+    font-size: 1.125rem;
+}
+
+.KJETitle .KJEFooter {
+    display: none;
+}
+
+.KJEGraphIcon {
+    background-repeat: no-repeat;
+    background-position: top left;
+    /*background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAASNJREFUeNqUU7ENwkAMTCIauowATMAGwASICUJqCsgEjIBSUAMTBCYIbBAWgGxAOlrO0b1kmSQIS37/v+2z3/b7Xge996MdxBic8ErORX/1SNp8gg6wAUTIY0QWCqlrJL8BaAkxV2AleMr9FezAKvAF2R5bAQF2gFh6/9ERoPEX4A8wXcNOUB9A8rScxS/4lLF6cu1AqQNWtA+V76yHZcuL2NXDBPEaMq+dYV+pussLt5LhS4oN5aKhy08eZ5Q55RD2pbHPpHkBU77boiiHM/YSUDp8NjpNghEGrMWkZQ6Fbur6ZnSaBKMSwFRShdFGgUnWmctQObl9Rhtnv+GsprbLpRnk2A6uaoAe9IFrlG8MI/U7UoAVLd9Sgq/Vrzm5wB8BBgBGcHZ0qxMuUQAAAABJRU5ErkJggg==);*/
+}
+.KJEInputIcon {
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-image: none; /* Sets an image next to the [+] or [-]
+    /*background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAANCAYAAABy6+R8AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAHdJREFUeNpiYCACfJ+qVADEATA+IxEa5gOpBCg3kTP73gJGEjTAQCATiRpAQIGRRA0LgM5LZCRVA0ZAEKMBRROxGkAAOSAciNGArikQiA8Q0gBzlgAQr4eyHYD4PtSpeCMwAYj/wzQSA1hAkQVKHkC8gVhNAAEGAMMTPBsVMAuAAAAAAElFTkSuQmCC);*/
+}
+
+#KJE-E-INPUTS input {
+    border: 0.0625rem solid #a7a9ac;
+    border-radius: 0.25rem;
+    color: #414042;
+}
+
+.KJEInputContainer .KJEArrow {
+    width: 0.625rem;
+    height: 0.625rem;
+    background-repeat: no-repeat;
+    background: #424142; /*Change color of the slider dot*/
+    border-radius: 0.25rem;
+    top: 0.8125rem !important;
+    border: none;
+}
+
+.KJEInputContainer .KJEArrow.active {
+     /*background: #f7941e; Change color of the slider dot when active*/
+    cursor: pointer;
+    border: none;
+}
+
+
+/*Report tables*/
+
+.KJEDefinitions .KJEReportTableDiv,
+.KJEReportTableDiv {
+    border: none;
+    box-shadow: none;
+}
+
+table.KJEReportTable, table.KJECalcTable, table.KJEScheduleTable {
+    background: none;
+}
+
+caption.KJEHeaderRow {
+    background-color: #ccc;
+    color: #414042;
+}
+
+table.KJEReportTable tr.KJEHeaderRow, table.KJECalcTable tr.KJEHeaderRow {
+    /*background-color: #fbb040; Change table header background color*/
+    background: #ccc;
+    color: #414042;
+    text-align: center;
+    border: none;
+}
+
+table.KJEReportTable tr.KJEFooterRow, table.KJECalcTable tr.KJEFooterRow {
+    background: #ccc;
+    color: #414042;
+    border: none;
+}
+table.KJEReportTable tr.KJEFooterRow:hover, table.KJECalcTable tr.KJEFooterRow:hover {
+    background: #ccc;
+    color: #414042;
+}
+
+table.KJEReportTable tr.KJEEvenRow, table.KJECalcTable tr.KJEEvenRow {
+    background: #eee;
+    color: #414042;
+    text-align: right;
+}
+table.KJEReportTable tr.KJEEvenRow:hover, table.KJECalcTable tr.KJEEvenRow:hover {
+    background: #eee;
+    color: #414042;
+}
+
+table.KJEReportTable tr.KJEOddRow, table.KJECalcTable tr.KJEOddRow {
+    background: #fff;
+    color: #414042;
+    text-align: right;
+}
+table.KJEReportTable tr.KJEOddRow:hover, table.KJECalcTable tr.KJEOddRow:hover {
+    background: #fff;
+    color: #414042;
+}
+
+table.KJEReportTable td.KJECell:hover, table.KJECalcTable td.KJECell:hover {
+    color: #414042;
+    /*background-color: #f7941e;  Change cell hover color */
+    background: transparent;
+}
+
+table.KJEReportTable .KJELabel:hover, table.KJECalcTable .KJELabel:hover {
+    color: #414042;
+    /*background-color: #f7941e;  Change cell hover color */
+    background: transparent;
+}
+
+table.KJEReportTable td.KJECellStrong:hover, table.KJECalcTable td.KJECellStrong:hover {
+    color: #414042;
+    /*background-color: #f7941e;  Change cell hover color */
+    background: transparent;
+}
+
+table.KJEReportTable td.KJECellSpecial:hover, table.KJECalcTable td.KJECellSpecial:hover {
+    color: #414042;
+    /* background-color: #f7941e; Change cell hover color */
+    background: transparent;
+}
+
+/*
+Rows and Cells used in the schedule table
+*/
+
+table.KJEScheduleTable tr.KJEScheduleHeaderRow {
+    /*background-color: #fbb040; Header background color*/
+    background: #ccc;
+    color: #414042;
+    text-align: right;
+    border: none;
+}
+
+.KJEScehduleTable th {
+    background: #ccc;
+    color: #414042;
+    border: none;
+}
+
+table.KJEScheduleTable tr.KJEFooterRow {
+    background: #ccc;
+    color: #414042;
+    border: none;
+}
+table.KJEScheduleTable tr.KJEFooterRow:hover {
+    background: #ccc;
+    color: #414042;
+}
+
+table.KJEScheduleTable tr.KJEScheduleEvenRow {
+    background: #eee;
+    color: #414042;
+    text-align: right;
+    border: none;
+}
+table.KJEScheduleTable tr.KJEScheduleEvenRow:hover {
+    background: #eee;
+    color: #414042;
+}
+
+table.KJEScheduleTable tr.KJEScheduleOddRow {
+    background: #fff;
+    color: #414042;
+    text-align: right;
+}
+table.KJEScheduleTable tr.KJEScheduleOddRow:hover {
+    background: #fff;
+    color: #414042;
+}
+
+table.KJEScheduleTable td.KJEScheduleCell:hover {
+    color: #414042;
+    /* background-color: #f7941e; Change Cell color on hover */
+    background: transparent;
+}
+
+.KJEFooterRow a{
+    color: #0055a4;
+    background-color: transparent;
+    text-decoration: underline;
+}
+.KJEFooterRow:hover a{
+    color: #0055a4;
+    background-color: transparent;
+}
+.KJEFooterRow:hover a:hover{
+    color: #0055a4;
+    background-color: transparent;
+}
+
+
+/* Graph */
+#KJE-C-GRAPH1. .KJEGraphDropper:hover {
+    background: #f7f7f7; /* This should match the 2nd color in the color list of the KJESiteSpecific.js*/
+}
+
+.KJEToggleIcon {
+    background: none; /* Graph Icon */
+}

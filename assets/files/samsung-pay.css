@@ -1,0 +1,689 @@
+*{
+	margin:0;
+	padding:0;}
+
+img, object, embed, video {
+
+}
+/* IE 6 does not support max-width so default to width 100% */
+.ie6 img {
+	width:100%;
+}
+
+a img{
+	border:none;}
+
+ 
+/*
+	Dreamweaver Fluid Grid Properties
+	----------------------------------
+	dw-num-cols-mobile:		5;
+	dw-num-cols-tablet:		8;
+	dw-num-cols-desktop:	12;
+	dw-gutter-percentage:	15;
+	
+	Inspiration from "Responsive Web Design" by Ethan Marcotte 
+	http://www.alistapart.com/articles/responsive-web-design
+	
+	and Golden Grid System by Joni Korpi
+	http://goldengridsystem.com/
+*/
+
+/* Mobile Layout: 480px and below. */
+
+.clear{
+	clear:both;}
+
+sup{
+	font-size: 65%;
+	line-height: normal;
+	vertical-align: text-top;
+}	
+
+@font-face {
+  font-family: 'MarkWebPro-LightW01Regular';
+  src: url('../fonts/MarkWebPro-LightW01Regular.eot.html'); /* IE9 Compat Modes */
+  src: url('../fonts/MarkWebPro-LightW01Regular.eot-.html#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/MarkWebPro-LightW01Regular.woff2.html') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/MarkWebPro-LightW01Regular.woff.html') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/MarkWebPro-LightW01Regular.ttf.html')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/MarkWebPro-LightW01Regular.svg.html#svgMarkWebPro-LightW01Regular') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'MarkWebPro-BoldW01Regular';
+  src: url('../fonts/MarkWebPro-BoldW01Regular.eot.html'); /* IE9 Compat Modes */
+  src: url('../fonts/MarkWebPro-BoldW01Regular.eot-.html#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/MarkWebPro-BoldW01Regular.woff2.html') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/MarkWebPro-BoldW01Regular.woff.html') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/MarkWebPro-BoldW01Regular.ttf.html')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/MarkWebPro-BoldW01Regular.svg.html#svgMarkWebPro-BoldW01Regular') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'MarkWebPro-BookW01Regular';
+  src: url('../fonts/MarkWebPro-BookW01Regular.eot.html'); /* IE9 Compat Modes */
+  src: url('../fonts/MarkWebPro-BookW01Regular.eot-.html#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/MarkWebPro-BookW01Regular.woff2.html') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/MarkWebPro-BookW01Regular.woff.html') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/MarkWebPro-BookW01Regular.ttf.html')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/MarkWebPro-BookW01Regular.svg.html#svgMarkWebPro-BookW01Regular') format('svg'); /* Legacy iOS */
+}
+
+ 
+
+body{
+	font-family: 'MarkWebPro-LightW01Regular', 'Open Sans', sans-serif;
+	 }
+
+
+
+
+	
+.gridContainer {
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	padding-left: 0;
+	padding-right: 0;
+	
+	 
+	 
+}
+
+/***************/
+/*HEADER*/
+/**************/
+
+#Header {
+	width: 94%;
+	background-color:#000;
+	padding-top:30px;
+	padding-left:3%;
+	padding-right:3%; 	 
+}
+
+#Logos{
+	
+	padding-bottom:40px;
+	 }
+
+#SamsungLogo{
+	max-width:300px;
+	width:40%;
+	 
+	float:left;
+	 }
+	
+#Logo{
+	max-width: 462px;
+	float: right;
+	width: 59%;
+	margin-top: -7px;
+	 }	
+	
+#Hero{
+	width:100%;
+	margin-left:auto;
+	margin-right:auto;}	 
+
+#HeroLeft{
+	max-width:230px;
+	width:93%;
+	margin-left:auto;
+	margin-right:auto;
+	float:none;
+	margin-top:40px;}
+	
+#HeroRight{
+	 
+	width:100%;
+	margin-left:auto;
+	margin-right:auto;
+	float:none;
+	padding-top:0;}	
+	
+#Hero h1{
+	font-size: 35px;
+	line-height:37px;
+	font-weight:normal;
+	color:#ffffff; 
+	font-family: 'MarkWebPro-LightW01Regular', 'Open Sans', sans-serif;ine-height: 41px;
+	margin-bottom: 25px;
+	margin-top:0;
+		 
+}
+/***************/
+/*MAIN CONTENT*/
+/**************/
+
+
+#mainContent {
+	width: 98%;
+	margin-left: auto;
+	margin-right: auto;
+	 
+	
+} 
+#mainContent h2{
+	font-size: 31px;
+	line-height: 35px; 
+	margin-bottom: 10px;
+	margin-top:0;
+	font-weight:normal; 
+	 
+}
+
+#mainContent p{
+	font-size: 18px;
+	line-height: 31px; 
+	margin-top: 12px;
+	margin-bottom: 12px;
+	 
+}
+
+/***********/
+.Intro{
+	
+	background-color:#ffffff;
+	padding-top:35px;
+	padding-bottom:35px;
+	color:#000000;}
+	
+.IntroCopy{
+	width:94%;
+	margin-left: auto;
+	margin-right: auto;}
+		
+.IntroBtn{
+	
+	width:94%;
+	margin-left: 0; 
+	padding-top:30px;
+	margin-left: auto;
+	margin-right: auto;
+	}
+
+.sp-btn{
+	background-color:transparent;
+	display: inline-block;
+	border:solid 2px #000000;
+	-webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px; 
+	font-size:20px;
+	line-height:23px; 
+	color: #000000;
+	padding-top: 10px;
+	padding-right: 25px;
+	padding-bottom: 14px;
+	padding-left: 25px;
+ 
+	text-decoration:none;
+	
+	}
+.sp-btn:hover{
+	background-color: #000000;
+	color: #ffffff;
+	
+}
+
+/***********/
+ 
+.Section2{
+	background-color: #000;
+	padding-top:35px;
+	padding-bottom:35px;
+	
+	color: #ffffff;
+	
+}
+
+.EarnMore{
+	width:94%;
+	padding-left:0;
+	margin-left: auto;
+	margin-right: auto;
+	background-image: none;
+	 
+	 }
+
+.Section2 img.sp-hide{
+	display: block;
+	max-width: 500px;
+	width: 100%;
+}
+	
+.Secure{
+	width:94%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top:35px;}
+
+.SecureLeft{
+	float:none;
+	width:100%;
+	margin-left: auto;
+	margin-right: auto;}
+
+.SecureRight{
+	float:none;
+	width:61px;
+	margin-left: auto;
+	margin-right: auto;}	
+	
+ .Section3{
+	 
+	background-color:#54524f;
+	padding-top:50px;
+	color:#ffffff;}
+	
+
+.OnePlaceLeft{
+	float:none;
+	max-width:253px;
+	width:94%;
+	margin-top:25px;
+	margin-left:auto;
+	margin-right:auto;}
+
+.OnePlaceRight{
+	float:none; 
+	width:94%;
+	margin-left:auto;
+	margin-right:auto;}	
+
+.OnePlaceRight h3{
+	font-size: 21px;
+	line-height: 26px; 
+	margin-bottom: 20px;
+	margin-top:15px;
+	font-weight:lighter;
+	color:#ff671b; 
+	}
+
+#mainContent p.disclaimer{
+	font-size: 11px;
+	line-height: 12px; 
+	 
+	 
+}	
+.OnePlaceRight h3 a{
+	color:#ff671b;
+	text-decoration:underline; }
+#mainContent p a{
+	color:#ffffff;
+	text-decoration:none;}
+
+
+	
+ .Section4{
+	background-color:#ffffff;
+	padding-top:65px;
+	padding-bottom:65px;
+	color:#000000;
+	}	
+
+ 
+.PS{
+	width:94%;
+	margin-left: auto;
+	margin-right: auto;}
+
+.PSLeft{
+	float:none;
+	max-width:300px;
+	width:100%;
+	padding-top:25px;
+	margin-left: 0;
+	margin-right: auto;}
+
+.PSRight{
+	float:none;
+	width:100%;
+	margin-left: auto;
+	margin-right: auto;}
+ 
+
+
+/*********/
+/*LEGAL*/
+/*********/
+#mainFooter{
+	margin-left: auto;
+	margin-right: auto;
+	width: 88%;
+	padding-top:45px;
+	padding-left:6%;
+	padding-right:6%;
+	padding-bottom:45px;
+	background-color:#000000;
+	}
+ 
+#mainFooter p{
+	font-size: 11px;
+	line-height: 15px; 
+	margin-top:10px;
+	margin-bottom:10px;
+	color:#ffffff;
+	  
+} 		  
+
+#mainFooter p a{
+	 color:#ffffff;
+	 text-decoration:underline;}
+		  
+/* Tablet Layout: 481px to 769px. Inherits styles from: Mobile Layout. */
+
+@media only screen and (max-width: 599px) {
+#Logo {
+	margin-top: -5px;}
+}
+
+@media only screen and (min-width: 600px) {
+ /***************/
+/*MAIN CONTENT*/
+/**************/
+
+.EarnMore{
+	width:57%;
+	padding-left:40%;
+	background-image: url("https://greatsouthernbank-uat.banno.com/assets/files/et4497oF/MC_SamsungPay_Phone1.jpg/MC_SamsungPay_Phone1.jpg");
+	background-repeat: no-repeat;
+	background-position: left top;
+	background-size: 315px 167px; 
+	min-height:167px;
+	margin-left: 0;}
+
+.Section2{
+	padding-top: 100px;
+	padding-bottom: 100px;}
+
+.Section2 img.sp-hide{
+	display: none;
+}
+ 
+}
+ 
+ 
+
+@media only screen and (min-width: 769px) {
+#Header {
+	width: 88.86%; 
+	padding-top:60px;
+	padding-left:5.57%;
+	padding-right:5.57%; 	 
+}
+
+#SamsungLogo{
+	width:344px;
+	float:left;
+    margin-bottom:0;}
+	
+#Logo{
+	width: 360px;
+	float: right;
+	margin-top: -6px;
+}
+	
+#HeroLeft{
+	max-width:370px;
+	width:34.9%;
+	float:left;
+	margin-top:0;}
+	
+#HeroRight{
+	
+	width:56.6%;
+	margin-left:10px;
+	margin-right:10px;
+	float:right;
+	padding-top:40px;}	
+	
+#Hero h1{
+	
+	font-size: 42px;
+	line-height: 47px; 
+	margin-bottom: 15px;
+	margin-top:0;
+	
+}
+/***************/
+/*MAIN CONTENT*/
+/**************/
+
+#mainContent {
+	width: 100%;
+	
+}
+
+#mainContent h2{
+	font-size: 38px;
+	line-height: 43px; 
+	 
+	 
+}
+
+#mainContent p{
+	font-size: 21px;
+	line-height: 30px;
+	 
+}
+ 
+
+.Intro{
+	width:83.7%;
+	margin-left:auto;
+	margin-right:auto;
+	padding-top:75px;
+	padding-bottom:75px;
+	 }
+
+.IntroCopy{
+	max-width:730px;
+	width:62.28%;
+	float:left;}
+	
+.IntroBtn{
+	max-width:300px;
+	width:25.6%;
+	padding-left:6.06%;
+	padding-right:6.06%;
+	float:right;
+	padding-top:60px;text-align:center;}	
+ 
+.sp-btn{ 
+	font-size:25px;
+	line-height:28px;  
+	padding-top: 14px;
+	padding-right: 32px;
+	padding-bottom: 17px;
+	padding-left: 32px; 
+	} 
+ a.sp-btn:active, a.sp-btn:hover, a.sp-btn:focus {
+	 text-decoration:none;
+ }
+ 
+.Secure{
+	width:83.64%;
+	margin-left: auto;
+	margin-right: auto; 
+	margin-top:50px;}
+
+.SecureLeft{
+	float:left;
+	width:67.29%;
+	}
+
+.SecureRight{
+	float:right;
+	max-width:121px;
+	width:10.33%;
+	padding-left:11%;
+	padding-right:11%;
+	padding-top:80px;}	
+
+.OnePlace{
+	width:83.64%;
+	margin-left: auto;
+	margin-right: auto;}
+	
+.OnePlaceRight h3{
+	font-size: 24px;
+	line-height: 30px; 
+	 
+	}
+
+.PS{
+	width:83.64%;
+	margin-left: auto;
+	margin-right: auto;}
+
+.PSLeft{
+	float:left;
+	max-width:444px;
+	width:37.9%;
+	padding-top:40px;}
+
+.PSRight{
+	float:right;
+	max-width:590px;
+	width:50.4%;
+	margin-left:4.69%;
+	margin-right:7%;}
+ 
+}
+
+@media only screen and (min-width:960px) {
+#HeroRight{
+	 
+	margin-left:30px;
+	margin-right:20px;
+ 
+	padding-top:70px;}	
+ 
+.EarnMore{
+	width:57%;
+	padding-left:40%;
+	background-size:473px 251px;  
+	min-height:251px;
+	 } 
+
+
+ 
+}
+
+@media only screen and (min-width:1060px) {
+#HeroLeft{
+	width:34.9%;
+	float:left;
+	margin-top:0;}
+	
+#HeroRight{
+	width:56.6%;
+	margin-left:30px;
+	margin-right:20px;
+	float:right;
+	padding-top:80px;}	
+
+.OnePlaceLeft{
+	float:left;
+	max-width:293px;
+	width:25%;}
+
+.OnePlaceRight{
+	float:right;
+	max-width:790px;
+	width:67.5%;
+	margin-left:2.5%;}	
+.SecureRight{
+	 
+	padding-top:50px;}  
+}
+
+@media only screen and (min-width: 1200px) {
+#Hero h1{
+	
+	font-size: 57px;
+	line-height: 77px; 
+	margin-bottom: 15px;
+	margin-top:0;
+	
+} 	
+
+.OnePlaceRight{
+	padding-top:45px;
+}
+
+.SecureRight{
+	 
+	padding-top:0;}
+
+}
+
+/* Desktop Layout: 960px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+
+@media only screen and (min-width: 1400px) {
+
+.gridContainer {
+	width: 1400px;
+	margin: auto;
+	
+}
+
+
+/***************/
+/*HEADER*/
+/**************/
+
+#Header {
+	width: 88.86%; 
+	padding-top:60px;
+	padding-left:5.57%;
+	padding-right:5.57%;  
+}
+
+#HeroLeft{
+	width:34.9%;
+	float:left;
+	margin-top:0;}
+	
+#HeroRight{
+	width:56.6%;
+	margin-left:60px;
+	margin-right:20px;
+	float:right;
+	padding-top:160px;}	
+ 
+#Hero h1{
+	
+	font-size: 57px;
+	line-height: 77px; 
+	margin-bottom: 15px;
+	margin-top:0;
+	
+} 
+
+/***************/
+/*MAIN CONTENT*/
+/**************/
+.EarnMore{
+	width:35%;
+	padding-left:57%;
+	min-height:502px;
+	background-size:850px;} 
+
+
+.OnePlaceRight{
+	padding-top:65px;
+}
+.sp-btn{ 
+	font-size:30px;
+	line-height:32px;  
+	padding-top: 19px;
+	padding-right: 48px;
+	padding-bottom: 21px;
+	padding-left: 48px; 
+	}  
+ 
+}
